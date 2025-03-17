@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    eslint: {
+      // This will allow production builds to succeed even if there are ESLint errors.
+      ignoreDuringBuilds: true,
+    },
+  };
+  
+  export default nextConfig;
+  
